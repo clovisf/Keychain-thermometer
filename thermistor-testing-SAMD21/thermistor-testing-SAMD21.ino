@@ -1,3 +1,5 @@
+// Thermistor datasheet: https://br.mouser.com/ProductDetail/EPCOS-TDK/B57421V2103J62
+
 // Fonte: https://www.makerhero.com/blog/termistor-ntc-arduino/
 /*
  * Leitura de temperatura usando um termistor

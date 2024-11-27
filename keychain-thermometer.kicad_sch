@@ -1793,6 +1793,12 @@
 		)
 	)
 	(junction
+		(at 105.41 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13c323f4-eee1-4609-a1eb-d71dc03d0c72")
+	)
+	(junction
 		(at 176.53 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1941,6 +1947,16 @@
 			(type default)
 		)
 		(uuid "3111595d-69d0-40ec-bbda-22b2973be1e7")
+	)
+	(wire
+		(pts
+			(xy 107.95 116.84) (xy 105.41 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34941457-b8f9-46a7-b0fe-6d71c9332771")
 	)
 	(wire
 		(pts
@@ -2167,6 +2183,28 @@
 		(uuid "04edc54b-1da2-49da-852a-70c74e9eff91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 146.3137 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REF"
+		(shape input)
+		(at 107.95 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "26d2b228-abc7-4a27-92ee-ea66c5f39fed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.4428 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,6 +2456,28 @@
 			)
 		)
 	)
+	(global_label "REF"
+		(shape input)
+		(at 134.62 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d06ae4ca-4839-4402-9c95-02a06ce9c2a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 141.1128 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A"
 		(shape input)
 		(at 153.67 62.23 180)
@@ -2436,6 +2496,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 105.41 109.22 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1605d63-bdf3-470a-9c98-5b6e4f77f315")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 102.6062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2582,7 +2664,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles"
+		(property "Footprint" "Battery:BatteryHolder_Multicomp_BC-2001_1x2032"
 			(at 73.66 75.946 90)
 			(effects
 				(font
@@ -2699,6 +2781,72 @@
 			(project "keychain-thermometer"
 				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a22cd88-a03f-4705-961b-b50278b3cd04")
+		(property "Reference" "#PWR06"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59857131-d0fd-4b55-a517-2dc52d3bf21b")
+		)
+		(instances
+			(project "keychain-thermometer"
+				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2835,6 +2983,76 @@
 			(project "keychain-thermometer"
 				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55f0e404-0998-430f-936f-14c99bd840f3")
+		(property "Reference" "R6"
+			(at 107.95 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.95 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 103.632 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3261c8c3-82e7-4c3c-99a5-b01e062f9c1f")
+		)
+		(pin "1"
+			(uuid "27755ab7-2c1f-4ba2-9f65-226f9303b79f")
+		)
+		(instances
+			(project "keychain-thermometer"
+				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3336,6 +3554,76 @@
 			(project "keychain-thermometer"
 				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "859fe169-d882-47ff-8856-25ff6a870be6")
+		(property "Reference" "R5"
+			(at 107.95 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.95 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 103.632 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2e726df-b4e4-4d88-a76a-90bee224b342")
+		)
+		(pin "1"
+			(uuid "5e07d188-4fe1-4bf1-b076-e3c55b83370c")
+		)
+		(instances
+			(project "keychain-thermometer"
+				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
+					(reference "R5")
 					(unit 1)
 				)
 			)
